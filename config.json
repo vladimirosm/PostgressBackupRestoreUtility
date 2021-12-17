@@ -1,0 +1,9 @@
+{ 
+    "host_name":"localhost",
+    "database_name":"test",
+    "user_name":"postgres", 
+    "user_password":"123", 
+    "port":"5432", 
+    "backup_dir": "/var/db_backup",  
+    "backup_file_postfix": "_%Y-%m-%d_%H:%M:%S" 
+}
