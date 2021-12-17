@@ -13,7 +13,7 @@ fields:
     "host_name"      - string. server host name.     example: "localhost",
     "database_name"  - string. postgress database name . example : "test",
     "user_name"      - string. example: "postgres", 
-    "user_password"  - string. example: "123", 
+    "user_password"  - string. example: "123" (optonal). If password empty just remove this key , 
     "port"           - string. example: "5432",
     "backup_dir"     - string. Folder to collect backups. example: "/var/db_backup"
     "backup_file_postfix" - string. Postfix for backup file.   Пример: "_%Y-%m-%d_%H:%M:%S" 
@@ -30,7 +30,7 @@ After run :
     3 - Exit     
 
 
-Backup process create file "<database_name>_<backup_file_postfix>" in configuration parameter "backup_dir"
+Backup process create file "<database_name>_<backup_file_postfix>" in backup folder (configuration parameter "backup_dir")
 
 Restore process show all files in "backup_dir" and wait for input number of file 
 
